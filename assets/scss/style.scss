@@ -1,0 +1,320 @@
+
+
+//FUENTES
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Thin";
+    src: url(../fonts/Lato-Thin.ttf);
+}
+
+// GLOBALES
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: Lato-Regular;
+}
+
+
+// IMPORTS
+@import "_variables.scss";
+@import "_mixin.scss";
+
+
+// ELEMENTOS
+
+.lead-2 {
+    font-size: 15px;
+    text-decoration: none;
+    color: $terciario;
+}
+
+
+h1 {
+    font-family: Lato-Black;
+}
+
+p {
+    font-family: Lato-Light;
+}
+
+h2 {
+    font-family: Lato-Bold;
+}
+
+.tarjeta-personalizada {
+    @include tarjetas (solid 1px black, center, true);
+}
+
+
+// NAVEGADOR
+
+.nav-logo {
+    width: 25%;
+    max-width: 150px;
+    padding: 20px 10px;
+}
+
+.navbar-nav, .mr-auto {
+    flex: 1;
+    justify-content: end;
+}
+
+.nav-link {
+    &:hover { 
+    border-bottom: solid 1px white;
+    font-family: Lato-Bold;
+    color: white;
+}
+}
+
+.navbar-toggler {
+    border: 0px;
+    &:focus {
+        box-shadow: 0 0 0 0;
+        border: 0px;
+    }
+}
+
+
+
+// HEADER
+
+@media (max-width: 1200px) {
+    .contenedor-header {
+        min-height: 500px;
+    }
+}
+
+
+
+
+header {
+    background-color: $secundario;
+        .lead {
+            font-size: 20px;
+        }
+}
+
+
+// BODY
+
+.side-social {
+    width: 80px;
+    position: fixed;
+    top: 35%;
+    right: -65px;
+    background-color: $terciario;
+    padding: 10px 3px;
+    transition: 0.7s;
+
+    border-radius: 10px 0px 0px 10px;
+    &:hover{
+        right: 0px;
+    }
+    img {
+        padding: 3px 0px;
+        width: 50px;
+    }
+}
+
+
+// QUIENES SOMOS 
+
+
+.bloque-presentacion-izquierda {
+    background-color: $primario;
+    height: 80px;
+}
+
+@media (min-width: 1200px) {
+
+    .bloque-presentacion-izquierda {
+        min-height: 500px;
+        height: auto;
+        background-color: $primario;
+
+}
+}
+
+ 
+.bloque-presentacion-derecha {
+    min-height: 500px;
+    padding: 25px;
+    text-align: center;
+}
+
+
+
+// SERVICIOS
+
+.contenedor-de-servicios {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+@media (min-width: 760px) {
+    .card-text {
+        height: 150px;
+    }
+}
+
+// HOSTING & DOMINIOS
+
+.tarjeta-hosting {
+    border: 1px solid $terciario;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.superior-tarjeta-hosting {
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.superior-tarjeta-hosting-easy {
+    @extend .superior-tarjeta-hosting;
+    background-color: #0b5ed7;
+}
+
+.superior-tarjeta-hosting-plus {
+    @extend .superior-tarjeta-hosting;
+    background-color: #3a78d2;
+}
+
+.superior-tarjeta-hosting-pro {
+    @extend .superior-tarjeta-hosting;
+    background-color: #5f8dd0;
+}
+
+.cuerpo-tarjeta-hosting {
+    background-color: $secundario;
+        ul {
+            list-style: none;
+            padding: 20px;
+        }
+}
+
+.footer-tarjeta-hosting {
+    padding: 0px 20px 20px 20px;
+    p {
+        padding: 0px;
+        margin: 0px;
+}
+}
+
+// CONTACTO
+
+.contacto {
+    padding-top: 70px;
+    min-height: 500px;
+    background-color: $secundario;
+}
+
+.newsletter {
+    padding-top: 30px;
+    background-color: $secundario;
+}
+
+// OPINIONES CLIENTES
+
+.card {
+    padding-bottom: 50px;
+    h5 {
+        border-top: solid 1px gray;
+        padding-top: 15px;
+        opacity: 0.7;
+    }
+}
+
+// FOOTER
+
+.footer-entero {
+    height: 100px;
+    background-color: #212529;
+    color: white;
+    padding: 25px;
+        .lead {
+             font-size: 14px;
+        .link-footer {
+            text-decoration: none;
+            font-family: Lato-Bold;
+            color: white;
+        }
+}
+}
+
+
+.redes {
+    max-width: 25px;
+    max-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+// BOOTSTRAP 
+
+.row {
+    --bs-gutter-x: 0px;
+}
+
+.card-img-top {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-bottom: 20px;
+}
+
+.active {
+    font-family: Lato-Bold;
+}
+
+.form-control {
+    border: 0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    border-radius: 0;
+    &:focus {
+        border-color: transparent;
+        box-shadow: 0 0;
+        background-color: transparent;
+        border-bottom: solid 1px $terciario;
+    }
+}
+
+.form-select {
+    border: 0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    border-radius: 0;
+    &:focus {
+        background-color: transparent;
+        box-shadow: 0 0;
+        border-color: $terciario;
+    }
+}
+
+
+

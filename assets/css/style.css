@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato-Black";
+  src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "Lato-Thin";
+  src: url(../fonts/Lato-Thin.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: Lato-Regular;
+}
+
+.gotop {
+  background-color: #0b5ed7;
+  width: 50px;
+  border: 10px solid #0b5ed7;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.boton-primario, .cuarto-boton {
+  background-color: #0b5ed7;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: Lato-Black;
+}
+.boton-primario:hover, .cuarto-boton:hover {
+  background-color: #212529;
+  color: white;
+}
+
+.boton-secundario {
+  background-color: #eee;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: Lato-Black;
+}
+.boton-secundario:hover {
+  background-color: #212529;
+  color: white;
+}
+
+.boton-terciario {
+  background-color: #212529;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: Lato-Black;
+}
+.boton-terciario:hover {
+  background-color: #212529;
+  color: white;
+}
+
+.cuarto-boton {
+  font-family: Lato-Bold;
+}
+
+.lead-2 {
+  font-size: 15px;
+  text-decoration: none;
+  color: #212529;
+}
+
+h1 {
+  font-family: Lato-Black;
+}
+
+p {
+  font-family: Lato-Light;
+}
+
+h2 {
+  font-family: Lato-Bold;
+}
+
+.tarjeta-personalizada {
+  border: solid 1px black;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.nav-logo {
+  width: 25%;
+  max-width: 150px;
+  padding: 20px 10px;
+}
+
+.navbar-nav, .mr-auto {
+  flex: 1;
+  justify-content: end;
+}
+
+.nav-link:hover {
+  border-bottom: solid 1px white;
+  font-family: Lato-Bold;
+  color: white;
+}
+
+.navbar-toggler {
+  border: 0px;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+  border: 0px;
+}
+
+@media (max-width: 1200px) {
+  .contenedor-header {
+    min-height: 500px;
+  }
+}
+header {
+  background-color: #eee;
+}
+header .lead {
+  font-size: 20px;
+}
+
+.side-social {
+  width: 80px;
+  position: fixed;
+  top: 35%;
+  right: -65px;
+  background-color: #212529;
+  padding: 10px 3px;
+  transition: 0.7s;
+  border-radius: 10px 0px 0px 10px;
+}
+.side-social:hover {
+  right: 0px;
+}
+.side-social img {
+  padding: 3px 0px;
+  width: 50px;
+}
+
+.bloque-presentacion-izquierda {
+  background-color: #0b5ed7;
+  height: 80px;
+}
+
+@media (min-width: 1200px) {
+  .bloque-presentacion-izquierda {
+    min-height: 500px;
+    height: auto;
+    background-color: #0b5ed7;
+  }
+}
+.bloque-presentacion-derecha {
+  min-height: 500px;
+  padding: 25px;
+  text-align: center;
+}
+
+.contenedor-de-servicios {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 760px) {
+  .card-text {
+    height: 150px;
+  }
+}
+.tarjeta-hosting {
+  border: 1px solid #212529;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.superior-tarjeta-hosting, .superior-tarjeta-hosting-pro, .superior-tarjeta-hosting-plus, .superior-tarjeta-hosting-easy {
+  padding: 20px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.superior-tarjeta-hosting-easy {
+  background-color: #0b5ed7;
+}
+
+.superior-tarjeta-hosting-plus {
+  background-color: #3a78d2;
+}
+
+.superior-tarjeta-hosting-pro {
+  background-color: #5f8dd0;
+}
+
+.cuerpo-tarjeta-hosting {
+  background-color: #eee;
+}
+.cuerpo-tarjeta-hosting ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.footer-tarjeta-hosting {
+  padding: 0px 20px 20px 20px;
+}
+.footer-tarjeta-hosting p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.contacto {
+  padding-top: 70px;
+  min-height: 500px;
+  background-color: #eee;
+}
+
+.newsletter {
+  padding-top: 30px;
+  background-color: #eee;
+}
+
+.card {
+  padding-bottom: 50px;
+}
+.card h5 {
+  border-top: solid 1px gray;
+  padding-top: 15px;
+  opacity: 0.7;
+}
+
+.footer-entero {
+  height: 100px;
+  background-color: #212529;
+  color: white;
+  padding: 25px;
+}
+.footer-entero .lead {
+  font-size: 14px;
+}
+.footer-entero .lead .link-footer {
+  text-decoration: none;
+  font-family: Lato-Bold;
+  color: white;
+}
+
+.redes {
+  max-width: 25px;
+  max-height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.row {
+  --bs-gutter-x: 0px;
+}
+
+.card-img-top {
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+  padding-bottom: 20px;
+}
+
+.active {
+  font-family: Lato-Bold;
+}
+
+.form-control {
+  border: 0px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  border-radius: 0;
+}
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: 0 0;
+  background-color: transparent;
+  border-bottom: solid 1px #212529;
+}
+
+.form-select {
+  border: 0px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  border-radius: 0;
+}
+.form-select:focus {
+  background-color: transparent;
+  box-shadow: 0 0;
+  border-color: #212529;
+}/*# sourceMappingURL=style.css.map */
