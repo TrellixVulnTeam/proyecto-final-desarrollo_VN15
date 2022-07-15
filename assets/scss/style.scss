@@ -57,6 +57,7 @@ h1 {
 }
 
 p {
+    margin-bottom: 10px;
     font-family: Lato-Light;
 }
 
@@ -82,12 +83,12 @@ h2 {
     justify-content: end;
 }
 
-.nav-link {
-    &:hover { 
-    border-bottom: solid 1px white;
-    font-family: Lato-Bold;
-    color: white;
-}
+@media (min-width: 1200px) {
+    .nav-link {
+        &:hover { 
+        color: white;
+        }
+    }
 }
 
 .navbar-toggler {
@@ -140,12 +141,39 @@ header {
     }
 }
 
+.link-manual {
+    text-decoration: none;
+    color: $terciario;
+    font-weight: bolder;
+    font-size: medium;
+    padding-bottom: 50px;
+}
+
+.opinion {
+    color: $primario;
+    a {
+        text-decoration: none;
+        &:hover {
+            color: $terciario;
+    }
+    p {
+        font-weight: bold;
+    }
+}
+}
+
+.beneficios {
+    ul li {
+        list-style: none;
+    }
+}
+
 
 // QUIENES SOMOS 
 
 
 .bloque-presentacion-izquierda {
-    background-color: $primario;
+    background-color: $terciario;
     height: 80px;
 }
 
@@ -154,7 +182,7 @@ header {
     .bloque-presentacion-izquierda {
         min-height: 500px;
         height: auto;
-        background-color: $primario;
+        background-color: $terciario;
 
 }
 }
@@ -181,6 +209,39 @@ header {
     }
 }
 
+.tarjeta-servicio {
+    border-radius: 20px;
+    &:hover {
+        transform: scale(1.03);
+        transition: 0.2s;
+        box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    }
+    img {
+        width: 70px;
+    }
+}
+
+.t1 {
+    background-color: #ffb405;
+}
+.t2 {
+    background-color: #bddf60;
+}
+.t3 {
+    background-color: #00eea4;
+}
+.t4 {
+    background-color: #25c6fe;
+}
+.t5 {
+    background-color: #5d5cb0;
+}
+.t6 {
+    background-color: #8c5cb0;
+}
+
+
+
 // HOSTING & DOMINIOS
 
 .tarjeta-hosting {
@@ -192,25 +253,11 @@ header {
 .superior-tarjeta-hosting {
     padding: 20px;
     border-radius: 15px 15px 0px 0px;
-}
-
-.superior-tarjeta-hosting-easy {
-    @extend .superior-tarjeta-hosting;
-    background-color: #0b5ed7;
-}
-
-.superior-tarjeta-hosting-plus {
-    @extend .superior-tarjeta-hosting;
-    background-color: #3a78d2;
-}
-
-.superior-tarjeta-hosting-pro {
-    @extend .superior-tarjeta-hosting;
-    background-color: #5f8dd0;
+    background-color: $secundario;
 }
 
 .cuerpo-tarjeta-hosting {
-    background-color: $secundario;
+    background-color: white;
         ul {
             list-style: none;
             padding: 20px;
@@ -218,10 +265,13 @@ header {
 }
 
 .footer-tarjeta-hosting {
+    background-color: $secundario;
     padding: 0px 20px 20px 20px;
+    border-radius: 0px 0px 15px 15px;
     p {
         padding: 0px;
         margin: 0px;
+        margin-top: 10px;
 }
 }
 

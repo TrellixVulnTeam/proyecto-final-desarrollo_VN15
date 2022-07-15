@@ -12,12 +12,12 @@ $colores:(
 
 $gotopmap: (
     fondo: $primario,
-    ancho: 50px,
+    ancho: 58px,
     borde: 10px solid $primario,
     radio: 50px,
     posicion: fixed,
-    abajo: 30px,
-    derecha: 30px,
+    abajo: 20px,
+    izquierda: 30px,
 );
 
 .gotop {
@@ -27,7 +27,7 @@ $gotopmap: (
     border-radius: map-get($gotopmap, radio);
     position: map-get($gotopmap, posicion);
     bottom: map-get($gotopmap, abajo);
-    right: map-get($gotopmap, derecha);
+    left: map-get($gotopmap, izquierda);
 }
 
 // EACH

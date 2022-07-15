@@ -24,7 +24,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Inicio</a>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+                <a class="nav-link active" aria-current="page" href="#top">Servicios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -33,7 +33,10 @@
                 <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./hosting-dominio.html">Hosting & Dominio</a>
+                <a class="nav-link" href="./hosting-dominio.html">Hosting & Dominios</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://mvdcreativestudio.com/clientes" target="_blank" class="nav-link">Área de Clientes</a>
               </li>
             </ul>
           </div>
@@ -56,8 +59,9 @@
             </div>
         </div>
     </header>
-<!-- SECCIÓN SERVICIOS -->
     <main>
+        
+<!-- SERVICIOS VIEJO 
         <h1 id="servicios" class="col-12 fw-bold text-center p-5">SERVICIOS</h1>
         <div data-aos="zoom-in" class="cards d-flex flex-wrap justify-content-evenly text-center">
             <div class="card m-2 col-10 col-md-5 col-xl-3">
@@ -85,8 +89,53 @@
                 </div>
             </div>
         </div>
+-->        
+
+<!-- SECCIÓN SERVICIOS -->
+        <h1 id="servicios" class="col-12 fw-bold text-center p-5">SERVICIOS</h1>
+        
+        <div class="col-12 pb-5 row d-flex flex-wrap justify-content-center">
+
+          <div data-aos="fade-right" data-aos-duration="200" class="tarjeta-servicio t1 m-2 p-5 text-center col-10 col-md-5 col-xl-5">
+            <img class="" src="../assets/img/diseno-grafico.png" alt="">
+            <h3 class="pt-3">Diseño Gráfico</h2>
+            <p class="lead pt-3">Generamos piezas gráficas para <b>todos los medios</b> dependiendo de sus necesidades.</p>
+          </div>
+
+          <div data-aos="fade-down" data-aos-duration="200" class="tarjeta-servicio t2 m-2 p-5 text-center col-10 col-md-5 col-xl-3">
+            <img class="" src="../assets/img/diseno-web.png" alt="">
+            <h3 class="pt-3">Desarrollo Web</h2>
+            <p class="lead pt-3">Creamos sitios <b>interactivos</b> y 100% <b>adaptables a todas las pantallas</b> para todo tipo de Empresas/Personas.</p>
+          </div>
+
+          <div data-aos="fade-left" data-aos-duration="200" class="tarjeta-servicio t3 m-2 p-5 text-center col-10 col-md-5 col-xl-3">
+            <img class="" src="../assets/img/community-management.png" alt="">
+            <h3 class="pt-3">Community Management</h2>
+            <p class="lead pt-3">Planeamos y diseñamos la <b>imagen de su marca</b>, apoyandolo desde el comienzo.</p>
+          </div>
+
+          <div data-aos="fade-right" data-aos-duration="200" class="tarjeta-servicio t4 m-2 p-5 text-center col-10 col-md-5 col-xl-3">
+            <img class="col-2" src="../assets/img/community-management.png" alt="">
+            <h3 class="pt-3">SEO</h2>
+            <p class="lead pt-3">Uno de los puntos más importantes luego de que una empresa tiene su sitio web, es <b>lograr que los buscadores lo posicionen lo mejor posible</b>. Por esto, ofrecemos un servicio que se basa en <b>mejorar la ubicación</b> de su sitio en buscadores como <b>Google, Yahoo</b> y más.</p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="200" class="tarjeta-servicio t5 m-2 p-5 text-center col-10 col-md-5 col-xl-3">
+            <img class="col-2" src="../assets/img/diseno-grafico.png" alt="">
+            <h3 class="pt-3">Branding</h2>
+            <p class="lead pt-3">Creamos la <b>imagen de su marca en su totalidad</b>. Teniendo en cuenta todos los detalles, públicos objetivos, giros y más.</p>
+          </div>
+
+          <div data-aos="fade-left" data-aos-duration="200" class="tarjeta-servicio t6 m-2 p-5 text-center col-10 col-md-5 col-xl-5">
+            <img class="col-2" src="../assets/img/diseno-web.png" alt="">
+            <h3 class="pt-3">Analytics</h2>
+            <p class="lead s2 pt-3">Todos nuestros servicios incluyen <b>sistemas de analíticas</b> para que el cliente pueda medir los <b>resultados</b> de los proyectos y campañas que creamos, dando así la mayor <b>transparencia</b> posible de nuestro servicio.</p>
+          </div>
+
+        </div>
+
 <!-- FORMULARIO DE CONTACTO -->
-        <div id="cotizar" class="contacto row col-12 justify-content-center pb-5">
+        <div  id="cotizar" class="contacto row col-12 justify-content-center pb-5">
             <div class="row col-10 col-xl-6 justify-content-center pt-5">
               <form class="row justify-content-evenly">
                 <div class="col-md-6 p-1">
@@ -135,16 +184,33 @@
     </main>
 <!-- FOOTER -->
     <footer>
-      <div class="row footer-entero justify-content-between">
-        <div class="col-9 col-xl-4 d-flex align-items-center">
+      <div class="row footer-entero">
+        <div class="col-12 justify-content-center d-flex align-items-center">
           <p class="lead">Hecho con ♥ por <b>MVD Creative Studio</b></p>
         </div>
       </div>
-  </footer>
+    </footer>
 <!-- SCRIPTS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-      AOS.init();
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/62d118f4b0d10b6f3e7c71d1/1g80ciur8';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
   </script>
+  <!--End of Tawk.to Script-->
+
+  
 </body>
 </html>
