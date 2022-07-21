@@ -221,6 +221,11 @@ header {
     }
 }
 
+.clase-servicios {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 .t1 {
     background-color: #ffb405;
 }
@@ -322,6 +327,15 @@ header {
     max-height: 25px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.redes-vertical {
+    position: relative;
+    color: white;
+    p {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
 }
 
 // BOOTSTRAP 

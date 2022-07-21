@@ -226,6 +226,11 @@ header .lead {
   width: 70px;
 }
 
+.clase-servicios {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 .t1 {
   background-color: #ffb405;
 }
@@ -321,6 +326,15 @@ header .lead {
   max-height: 25px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.redes-vertical {
+  position: relative;
+  color: white;
+}
+.redes-vertical p {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 }
 
 .row {
